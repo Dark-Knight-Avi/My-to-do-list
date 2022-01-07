@@ -1,0 +1,142 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:wght@300;700&family=Ubuntu:wght@500&display=swap');
+/* CSS Utility */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+body{
+    min-height: 100vh;
+    background-color: #1C0C5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading */
+
+#heading{
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+/* Container */
+
+#container{
+    width: 40%;
+    min-width: 450px;
+    padding: 30px;
+}
+
+#taskBoard{
+    position: relative;
+    background-color: #3D2C8D;
+    padding: 30px 20px;
+    border-radius: 7px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#taskBoard input{
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins', cursive;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 2px;
+    position: relative;
+    outline: none;
+}
+
+#taskBoard input:focus{
+    border-color: #916BBF;
+}
+
+#addBtn{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #141E61;
+    color: #d1d3d4;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#addBtn:hover{
+    background-color: #3c3cb9c0;
+}
+#addBtn:active{
+    background-color: #10106bc0;
+}
+
+/* Tasks */
+
+#tasks{
+    background-color: #3D2C8D;
+    margin-top: 60px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: #A12568;
+    height: 62px;
+    padding: 8px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #d1d3d4;
+}
+
+.task span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#deleteBtn{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #700B97;
+    color: #d1d3d4;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    outline: none;
+    margin: 5px 0px;
+}
+
+#deleteBtn:hover{
+    background-color: #8b20b6;
+}
+#deleteBtn:active{
+    background-color: #561172;
+}
